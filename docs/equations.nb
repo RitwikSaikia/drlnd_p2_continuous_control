@@ -1,0 +1,1178 @@
+
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       103,          7]
+NotebookDataLength[     38674,       1170]
+NotebookOptionsPosition[     35375,       1053]
+NotebookOutlinePosition[     35734,       1069]
+CellTagsIndexPosition[     35691,       1066]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[TextData[{
+ "\n",
+ StyleBox["Vanila Policy Gradient", "Subsection"]
+}], "Input",
+ Evaluatable->False,
+ CellChangeTimes->{{3.753195952976943*^9, 3.753195983336795*^9}, {
+  3.7531960244068823`*^9, 3.75319604440396*^9}},
+ FormatType->"TextForm"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"vanilaPolicy", " ", "=", " ", 
+  RowBox[{"HoldForm", "[", 
+   RowBox[{
+    RowBox[{
+     SuperscriptBox["L", "PG"], " ", "[", "\[Theta]", "]"}], " ", "==", " ", 
+    RowBox[{
+     SubscriptBox["\[DoubleStruckCapitalE]", "t"], "\[LeftDoubleBracket]", 
+     RowBox[{
+      RowBox[{"Log", "[", 
+       RowBox[{
+        SubscriptBox["\[Pi]", "\[Theta]"], "[", 
+        RowBox[{
+         SubscriptBox["a", "t"], "|", 
+         SubscriptBox["s", "t"]}], "]"}], "]"}], " ", "\[Cross]", " ", 
+      SubscriptBox["\[CapitalAHat]", "t"]}], "\[RightDoubleBracket]"}]}], " ",
+    "]"}]}]], "Input",
+ CellChangeTimes->{{3.753190883828075*^9, 3.7531909539241056`*^9}, {
+   3.7531909843324213`*^9, 3.753190989447977*^9}, {3.7531910852517347`*^9, 
+   3.753191131681488*^9}, {3.753191170209918*^9, 3.753191172087905*^9}, {
+   3.753191334159137*^9, 3.753191346875431*^9}, {3.7531913787999897`*^9, 
+   3.753191398517659*^9}, {3.753191514472272*^9, 3.753191601989193*^9}, {
+   3.753191656657091*^9, 3.753191680238138*^9}, {3.753191756200598*^9, 
+   3.753191763951367*^9}, {3.753191810280479*^9, 3.7531918574402027`*^9}, {
+   3.7531920830652857`*^9, 3.753192102214918*^9}, {3.7531923656967707`*^9, 
+   3.753192366814534*^9}, {3.753192406277486*^9, 3.753192427426799*^9}, {
+   3.7531926106460123`*^9, 3.753192615487048*^9}, 3.753192690366001*^9, {
+   3.753194458339576*^9, 3.753194477464758*^9}, {3.7531956137479553`*^9, 
+   3.753195659312023*^9}, {3.753195736241734*^9, 3.753195754301351*^9}, {
+   3.7531958462681513`*^9, 3.753195857331565*^9}, 3.753195905633316*^9, {
+   3.753196125106379*^9, 3.753196170877005*^9}, {3.753196208623884*^9, 
+   3.753196231854332*^9}, {3.753196303560377*^9, 3.75319630447504*^9}, {
+   3.753196354701438*^9, 3.753196411639902*^9}, {3.753196443469928*^9, 
+   3.753196449480585*^9}, {3.7531965282790728`*^9, 3.753196562240841*^9}, {
+   3.753196645628591*^9, 3.753196663673829*^9}, {3.753196731106175*^9, 
+   3.7531967504157763`*^9}, {3.753196820766411*^9, 3.753196836983387*^9}, 
+   3.753196876004714*^9, {3.753196923876608*^9, 3.7531969967537603`*^9}, {
+   3.753197265087782*^9, 3.753197294758664*^9}, {3.7531976971732073`*^9, 
+   3.753197711388544*^9}, 3.7531977868608513`*^9, {3.7531978457474422`*^9, 
+   3.753197848640177*^9}, {3.753198376033511*^9, 3.753198380520112*^9}, 
+   3.753198412345701*^9}],
+
+Cell[BoxData[
+ TagBox[
+  RowBox[{
+   RowBox[{
+    SuperscriptBox["L", "PG"], "[", "\[Theta]", "]"}], "\[Equal]", 
+   RowBox[{
+    SubscriptBox["\[DoubleStruckCapitalE]", "t"], "\[LeftDoubleBracket]", 
+    RowBox[{
+     RowBox[{"Log", "[", 
+      RowBox[{
+       SubscriptBox["\[Pi]", "\[Theta]"], "[", 
+       RowBox[{
+        SubscriptBox["a", "t"], "|", 
+        SubscriptBox["s", "t"]}], "]"}], "]"}], "\[Cross]", 
+     SubscriptBox["\[CapitalAHat]", "t"]}], "\[RightDoubleBracket]"}]}],
+  HoldForm]], "Output",
+ CellChangeTimes->{{3.753196997253887*^9, 3.7531970108839808`*^9}, 
+   3.7531971122932673`*^9, {3.7531972667141*^9, 3.7531972966270523`*^9}, 
+   3.753197351888294*^9, 3.753197509180808*^9, 3.753197630080596*^9, 
+   3.7531977124658127`*^9, 3.753197787480212*^9, 3.753197849948373*^9, 
+   3.75319838162152*^9, 3.753198417365879*^9, {3.75320399924891*^9, 
+   3.753204038485611*^9}, {3.753354602825075*^9, 3.753354608492755*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"vanilaPolicy", " ", "//", " ", "TraditionalForm"}]], "Input",
+ CellChangeTimes->{{3.7531978163418818`*^9, 3.753197822176921*^9}, {
+   3.753197853490222*^9, 3.7531978538810387`*^9}, 3.753198415361528*^9, {
+   3.753198658477828*^9, 3.753198663930924*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  TagBox[
+   RowBox[{
+    RowBox[{
+     SuperscriptBox["L", "PG"], "(", "\[Theta]", ")"}], "\[LongEqual]", 
+    RowBox[{
+     SubscriptBox["\[DoubleStruckCapitalE]", "t"], "\[LeftDoubleBracket]", 
+     RowBox[{
+      RowBox[{"log", "(", 
+       RowBox[{
+        SubscriptBox["\[Pi]", "\[Theta]"], "(", 
+        RowBox[{
+         SubscriptBox["a", "t"], "|", 
+         SubscriptBox["s", "t"]}], ")"}], ")"}], "\[Cross]", 
+      SubscriptBox["\[CapitalAHat]", "t"]}], "\[RightDoubleBracket]"}]}],
+   HoldForm], TraditionalForm]], "Output",
+ CellChangeTimes->{
+  3.753197854394423*^9, 3.75319838823883*^9, 3.753198418932084*^9, 
+   3.753198664248444*^9, {3.753203999401181*^9, 3.753204038605946*^9}, 
+   3.753354608594046*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Export", "[", 
+   RowBox[{"\"\<loss_vanila_policy.svg\>\"", ",", "  ", 
+    RowBox[{"vanilaPolicy", "//", " ", "TraditionalForm"}]}], "]"}], 
+  ";"}]], "Input",
+ CellChangeTimes->{{3.7531968037199907`*^9, 3.753196804476614*^9}, {
+   3.753196841437654*^9, 3.753196856651503*^9}, {3.753196895645043*^9, 
+   3.75319689792026*^9}, {3.75319692954064*^9, 3.753196934962331*^9}, {
+   3.753196973107617*^9, 3.753197035181336*^9}, {3.753197098878089*^9, 
+   3.7531971025555964`*^9}, {3.753197336261898*^9, 3.753197371818894*^9}, {
+   3.753197499147666*^9, 3.753197522791045*^9}, {3.753197580543931*^9, 
+   3.753197581093161*^9}, {3.753197716677676*^9, 3.753197727014619*^9}, 
+   3.753197798291244*^9, {3.75319786014468*^9, 3.753197860520499*^9}, {
+   3.753197894113078*^9, 3.753197904454894*^9}, 3.7531984435195427`*^9, 
+   3.753199242113278*^9}],
+
+Cell[TextData[{
+ "\n",
+ StyleBox["Importance Sampling", "Subsection"]
+}], "Input",
+ Evaluatable->False,
+ CellChangeTimes->{{3.753195952976943*^9, 3.753195983336795*^9}, {
+  3.7531960244068823`*^9, 3.75319604440396*^9}, {3.7531981604533443`*^9, 
+  3.753198163189131*^9}},
+ FormatType->"TextForm"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"imporanceSampling", " ", "=", " ", 
+  RowBox[{"HoldForm", "[", 
+   RowBox[{
+    RowBox[{
+     SuperscriptBox["L", "IS"], " ", "[", "\[Theta]", "]"}], " ", "==", " ", 
+    RowBox[{
+     SubscriptBox["\[DoubleStruckCapitalE]", "t"], "\[LeftDoubleBracket]", 
+     RowBox[{
+      RowBox[{"(", 
+       FractionBox[
+        RowBox[{
+         SubscriptBox["\[Pi]", "\[Theta]"], "[", 
+         RowBox[{
+          SubscriptBox["a", "t"], "|", 
+          SubscriptBox["s", "t"]}], "]"}], 
+        RowBox[{
+         SubscriptBox["\[Pi]", 
+          SubscriptBox["\[Theta]", "old"]], "[", 
+         RowBox[{
+          SubscriptBox["a", "t"], "|", 
+          SubscriptBox["s", "t"]}], "]"}]], ")"}], " ", "\[Cross]", " ", 
+      SubscriptBox["\[CapitalAHat]", "t"]}], "\[RightDoubleBracket]"}]}], " ",
+    "]"}]}]], "Input",
+ CellChangeTimes->{{3.753198175887661*^9, 3.753198422343396*^9}, {
+  3.753352058233424*^9, 3.753352063073152*^9}}],
+
+Cell[BoxData[
+ TagBox[
+  RowBox[{
+   RowBox[{
+    SuperscriptBox["L", "IS"], "[", "\[Theta]", "]"}], "\[Equal]", 
+   RowBox[{
+    SubscriptBox["\[DoubleStruckCapitalE]", "t"], "\[LeftDoubleBracket]", 
+    RowBox[{
+     FractionBox[
+      RowBox[{
+       SubscriptBox["\[Pi]", "\[Theta]"], "[", 
+       RowBox[{
+        SubscriptBox["a", "t"], "|", 
+        SubscriptBox["s", "t"]}], "]"}], 
+      RowBox[{
+       SubscriptBox["\[Pi]", 
+        SubscriptBox["\[Theta]", "old"]], "[", 
+       RowBox[{
+        SubscriptBox["a", "t"], "|", 
+        SubscriptBox["s", "t"]}], "]"}]], "\[Cross]", 
+     SubscriptBox["\[CapitalAHat]", "t"]}], "\[RightDoubleBracket]"}]}],
+  HoldForm]], "Output",
+ CellChangeTimes->{3.753352032138914*^9, 3.753352063500476*^9, 
+  3.753354608712248*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"imporanceSampling", " ", "//", " ", "TraditionalForm"}]], "Input",
+ CellChangeTimes->{{3.7531984066237583`*^9, 3.753198426022931*^9}, {
+  3.75319867222761*^9, 3.753198675531598*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  TagBox[
+   RowBox[{
+    RowBox[{
+     SuperscriptBox["L", "IS"], "(", "\[Theta]", ")"}], "\[LongEqual]", 
+    RowBox[{
+     SubscriptBox["\[DoubleStruckCapitalE]", "t"], "\[LeftDoubleBracket]", 
+     RowBox[{
+      FractionBox[
+       RowBox[{
+        SubscriptBox["\[Pi]", "\[Theta]"], "(", 
+        RowBox[{
+         SubscriptBox["a", "t"], "|", 
+         SubscriptBox["s", "t"]}], ")"}], 
+       RowBox[{
+        SubscriptBox["\[Pi]", 
+         SubscriptBox["\[Theta]", "old"]], "(", 
+        RowBox[{
+         SubscriptBox["a", "t"], "|", 
+         SubscriptBox["s", "t"]}], ")"}]], "\[Cross]", 
+      SubscriptBox["\[CapitalAHat]", "t"]}], "\[RightDoubleBracket]"}]}],
+   HoldForm], TraditionalForm]], "Output",
+ CellChangeTimes->{{3.7531984086775723`*^9, 3.753198427056027*^9}, 
+   3.753198676059067*^9, {3.7532039996017923`*^9, 3.753204038808876*^9}, {
+   3.753352038158491*^9, 3.753352065752083*^9}, 3.7533546087587147`*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Export", "[", 
+   RowBox[{"\"\<loss_importance_sampling.svg\>\"", ",", "  ", 
+    RowBox[{"imporanceSampling", "//", " ", "TraditionalForm"}]}], "]"}], 
+  ";"}]], "Input",
+ CellChangeTimes->{{3.753198435974078*^9, 3.753198448752001*^9}, 
+   3.753199238265615*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+  "ExpandFileName", "[", "\"\<loss_importance_sampling.svg\>\"", "]"}], 
+  ";"}]], "Input",
+ CellChangeTimes->{3.753353423137232*^9},
+ NumberMarks->False],
+
+Cell[TextData[{
+ "\n",
+ StyleBox["Trusted Region Policy Optimization", "Subsection"]
+}], "Input",
+ Evaluatable->False,
+ CellChangeTimes->{{3.753195952976943*^9, 3.753195983336795*^9}, {
+  3.7531960244068823`*^9, 3.75319604440396*^9}, {3.7531981604533443`*^9, 
+  3.753198163189131*^9}, {3.753198696373838*^9, 3.753198711635064*^9}},
+ FormatType->"TextForm"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"trpoLoss", " ", "=", " ", 
+  RowBox[{"HoldForm", "[", 
+   RowBox[{
+    SubscriptBox["Maximize", "\[Theta]"], "[", " ", 
+    RowBox[{
+     SubscriptBox["\[DoubleStruckCapitalE]", "t"], "\[LeftDoubleBracket]", 
+     RowBox[{
+      RowBox[{"(", 
+       FractionBox[
+        RowBox[{
+         SubscriptBox["\[Pi]", "\[Theta]"], "[", 
+         RowBox[{
+          SubscriptBox["a", "t"], "|", 
+          SubscriptBox["s", "t"]}], "]"}], 
+        RowBox[{
+         SubscriptBox["\[Pi]", 
+          SubscriptBox["\[Theta]", "old"]], "[", 
+         RowBox[{
+          SubscriptBox["a", "t"], "|", 
+          SubscriptBox["s", "t"]}], "]"}]], ")"}], " ", "\[Cross]", " ", 
+      SubscriptBox["\[CapitalAHat]", "t"]}], "\[RightDoubleBracket]"}], " ", 
+    "]"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.753198721782295*^9, 3.753198726069519*^9}, {
+  3.7531987654909983`*^9, 3.753198807094935*^9}, {3.753203557340114*^9, 
+  3.753203589777779*^9}, {3.753203663634705*^9, 3.7532036814651403`*^9}, {
+  3.753203711727294*^9, 3.753203747908934*^9}, {3.753203781760023*^9, 
+  3.753203787894349*^9}, {3.753353236157236*^9, 3.753353244756371*^9}}],
+
+Cell[BoxData[
+ TagBox[
+  RowBox[{
+   SubscriptBox["Maximize", "\[Theta]"], "[", 
+   RowBox[{
+    SubscriptBox["\[DoubleStruckCapitalE]", "t"], "\[LeftDoubleBracket]", 
+    RowBox[{
+     FractionBox[
+      RowBox[{
+       SubscriptBox["\[Pi]", "\[Theta]"], "[", 
+       RowBox[{
+        SubscriptBox["a", "t"], "|", 
+        SubscriptBox["s", "t"]}], "]"}], 
+      RowBox[{
+       SubscriptBox["\[Pi]", 
+        SubscriptBox["\[Theta]", "old"]], "[", 
+       RowBox[{
+        SubscriptBox["a", "t"], "|", 
+        SubscriptBox["s", "t"]}], "]"}]], "\[Cross]", 
+     SubscriptBox["\[CapitalAHat]", "t"]}], "\[RightDoubleBracket]"}], "]"}],
+  HoldForm]], "Output",
+ CellChangeTimes->{
+  3.753203788364808*^9, {3.753203999737792*^9, 3.753204038940991*^9}, 
+   3.753353427994115*^9, 3.753354608882379*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"trpoLoss", " ", "//", " ", "TraditionalForm"}]], "Input",
+ CellChangeTimes->{{3.753199164714643*^9, 3.7531991682539253`*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  TagBox[
+   RowBox[{
+    SubscriptBox["Maximize", "\[Theta]"], "(", 
+    RowBox[{
+     SubscriptBox["\[DoubleStruckCapitalE]", "t"], "\[LeftDoubleBracket]", 
+     RowBox[{
+      FractionBox[
+       RowBox[{
+        SubscriptBox["\[Pi]", "\[Theta]"], "(", 
+        RowBox[{
+         SubscriptBox["a", "t"], "|", 
+         SubscriptBox["s", "t"]}], ")"}], 
+       RowBox[{
+        SubscriptBox["\[Pi]", 
+         SubscriptBox["\[Theta]", "old"]], "(", 
+        RowBox[{
+         SubscriptBox["a", "t"], "|", 
+         SubscriptBox["s", "t"]}], ")"}]], "\[Cross]", 
+      SubscriptBox["\[CapitalAHat]", "t"]}], "\[RightDoubleBracket]"}], ")"}],
+   
+   HoldForm], TraditionalForm]], "Output",
+ CellChangeTimes->{
+  3.753199168671111*^9, 3.753203844762125*^9, {3.7532039998051558`*^9, 
+   3.753204039007799*^9}, 3.753353431198773*^9, 3.7533546089437637`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"trpoConstraint", " ", "=", " ", 
+  RowBox[{"HoldForm", "[", " ", 
+   RowBox[{"\[Theta]", " ", "\[Element]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"KL", "\[LeftDoubleBracket]", 
+       RowBox[{
+        RowBox[{
+         SubscriptBox["\[Pi]", 
+          SubscriptBox["\[Theta]", "old"]], "[", 
+         RowBox[{"\[Bullet]", "|", 
+          SubscriptBox["s", "t"]}], "]"}], ",", " ", 
+        RowBox[{
+         SubscriptBox["\[Pi]", "\[Theta]"], "[", 
+         RowBox[{"\[Bullet]", "|", 
+          SubscriptBox["s", "t"]}], "]"}]}], "\[RightDoubleBracket]"}], " ", 
+      "\[LessEqual]", " ", "\[Delta]"}], "}"}]}], " ", "]"}]}]], "Input",
+ CellChangeTimes->{{3.753198777296129*^9, 3.753198782080688*^9}, {
+   3.753198831069694*^9, 3.7531988831772213`*^9}, {3.7531989137724133`*^9, 
+   3.753199088101213*^9}, {3.753199135271133*^9, 3.7531991420853643`*^9}, {
+   3.7532034661579638`*^9, 3.753203470755578*^9}, 3.75320360942666*^9, {
+   3.7532037943591223`*^9, 3.75320382119611*^9}}],
+
+Cell[BoxData[
+ TagBox[
+  RowBox[{"\[Theta]", "\[Element]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"KL", "\[LeftDoubleBracket]", 
+      RowBox[{
+       RowBox[{
+        SubscriptBox["\[Pi]", 
+         SubscriptBox["\[Theta]", "old"]], "[", 
+        RowBox[{"\[Bullet]", "|", 
+         SubscriptBox["s", "t"]}], "]"}], ",", 
+       RowBox[{
+        SubscriptBox["\[Pi]", "\[Theta]"], "[", 
+        RowBox[{"\[Bullet]", "|", 
+         SubscriptBox["s", "t"]}], "]"}]}], "\[RightDoubleBracket]"}], 
+     "\[LessEqual]", "\[Delta]"}], "}"}]}],
+  HoldForm]], "Output",
+ CellChangeTimes->{
+  3.7531990885856667`*^9, 3.7531991428283863`*^9, {3.753203800938178*^9, 
+   3.753203821919951*^9}, {3.753203999871316*^9, 3.753204039057303*^9}, 
+   3.7533534337151947`*^9, 3.7533546090061493`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"trpoConstraint", " ", "//", " ", "TraditionalForm"}]], "Input",
+ CellChangeTimes->{{3.753199148468101*^9, 3.753199157373279*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  TagBox[
+   RowBox[{"\[Theta]", "\[Element]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"KL", "\[LeftDoubleBracket]", 
+       RowBox[{
+        RowBox[{
+         SubscriptBox["\[Pi]", 
+          SubscriptBox["\[Theta]", "old"]], "(", 
+         RowBox[{"\[Bullet]", "|", 
+          SubscriptBox["s", "t"]}], ")"}], ",", 
+        RowBox[{
+         SubscriptBox["\[Pi]", "\[Theta]"], "(", 
+         RowBox[{"\[Bullet]", "|", 
+          SubscriptBox["s", "t"]}], ")"}]}], "\[RightDoubleBracket]"}], 
+      "\[LessEqual]", "\[Delta]"}], "}"}]}],
+   HoldForm], TraditionalForm]], "Output",
+ CellChangeTimes->{
+  3.753199157819911*^9, {3.753203810032095*^9, 3.7532038281920853`*^9}, {
+   3.753203999939065*^9, 3.7532040391091833`*^9}, 3.753353437093336*^9, 
+   3.753354609054317*^9}]
+}, Open  ]],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"Export", "[", 
+   RowBox[{"\"\<loss_trpo_maximize.svg\>\"", ",", "  ", 
+    RowBox[{"trpoLoss", "//", " ", "TraditionalForm"}]}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Export", "[", 
+   RowBox[{"\"\<loss_trpo_constraint.svg\>\"", ",", "  ", 
+    RowBox[{"trpoConstraint", "//", " ", "TraditionalForm"}]}], "]"}], 
+  ";"}]}], "Input",
+ CellChangeTimes->{{3.753199189929117*^9, 3.7531992325035143`*^9}, 
+   3.7531992720330267`*^9}],
+
+Cell[TextData[{
+ "\n",
+ StyleBox["Proximal Policy Optimization", "Subsection"]
+}], "Input",
+ Evaluatable->False,
+ CellChangeTimes->{{3.753195952976943*^9, 3.753195983336795*^9}, {
+  3.7531960244068823`*^9, 3.75319604440396*^9}, {3.7531981604533443`*^9, 
+  3.753198163189131*^9}, {3.753198696373838*^9, 3.753198711635064*^9}, {
+  3.753201198450716*^9, 3.7532011998329287`*^9}},
+ FormatType->"TextForm"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", 
+  RowBox[{"ppoRatio", " ", "=", " ", 
+   RowBox[{"HoldForm", "[", 
+    RowBox[{
+     RowBox[{
+      SubscriptBox["r", "t"], "[", "\[Theta]", "]"}], " ", "=", " ", 
+     RowBox[{"(", 
+      FractionBox[
+       RowBox[{
+        SubscriptBox["\[Pi]", "\[Theta]"], "[", 
+        RowBox[{
+         SubscriptBox["a", "t"], "|", 
+         SubscriptBox["s", "t"]}], "]"}], 
+       RowBox[{
+        SubscriptBox["\[Pi]", 
+         SubscriptBox["\[Theta]", "old"]], "[", 
+        RowBox[{
+         SubscriptBox["a", "t"], "|", 
+         SubscriptBox["s", "t"]}], "]"}]], ")"}]}], "]"}]}]}]], "Input",
+ CellChangeTimes->{{3.7533526029176903`*^9, 3.753352635000422*^9}}],
+
+Cell[BoxData[
+ TagBox[
+  RowBox[{
+   RowBox[{
+    SubscriptBox["r", "t"], "[", "\[Theta]", "]"}], "=", 
+   FractionBox[
+    RowBox[{
+     SubscriptBox["\[Pi]", "\[Theta]"], "[", 
+     RowBox[{
+      SubscriptBox["a", "t"], "|", 
+      SubscriptBox["s", "t"]}], "]"}], 
+    RowBox[{
+     SubscriptBox["\[Pi]", 
+      SubscriptBox["\[Theta]", "old"]], "[", 
+     RowBox[{
+      SubscriptBox["a", "t"], "|", 
+      SubscriptBox["s", "t"]}], "]"}]]}],
+  HoldForm]], "Output",
+ CellChangeTimes->{3.753352638456849*^9, 3.753354546213039*^9, 
+  3.753354609205598*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"ppoRatio", " ", "//", " ", "TraditionalForm"}]], "Input",
+ CellChangeTimes->{{3.753352643309738*^9, 3.753352647180791*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  TagBox[
+   RowBox[{
+    RowBox[{
+     SubscriptBox["r", "t"], "(", "\[Theta]", ")"}], "=", 
+    FractionBox[
+     RowBox[{
+      SubscriptBox["\[Pi]", "\[Theta]"], "(", 
+      RowBox[{
+       SubscriptBox["a", "t"], "|", 
+       SubscriptBox["s", "t"]}], ")"}], 
+     RowBox[{
+      SubscriptBox["\[Pi]", 
+       SubscriptBox["\[Theta]", "old"]], "(", 
+      RowBox[{
+       SubscriptBox["a", "t"], "|", 
+       SubscriptBox["s", "t"]}], ")"}]]}],
+   HoldForm], TraditionalForm]], "Output",
+ CellChangeTimes->{3.7533526475019217`*^9, 3.7533545515739098`*^9, 
+  3.753354609245376*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"ppoClipLoss", " ", "=", " ", 
+  RowBox[{"HoldForm", "[", 
+   RowBox[{
+    RowBox[{
+     SuperscriptBox["L", "CLIP"], " ", "[", "\[Theta]", "]"}], " ", "=", " ", 
+    
+    RowBox[{
+     SubscriptBox["\[DoubleStruckCapitalE]", "t"], "\[LeftDoubleBracket]", 
+     RowBox[{"min", "[", 
+      RowBox[{
+       RowBox[{
+        RowBox[{
+         SubscriptBox["r", "t"], "[", "\[Theta]", "]"}], "\[Cross]", " ", 
+        SubscriptBox["\[CapitalAHat]", "t"]}], ",", " ", 
+       RowBox[{
+        RowBox[{"clip", "[", 
+         RowBox[{
+          RowBox[{
+           SubscriptBox["r", "t"], "[", "\[Theta]", "]"}], ",", " ", 
+          RowBox[{"1", "-", "\[Epsilon]"}], ",", " ", 
+          RowBox[{"1", " ", "+", " ", "\[Epsilon]"}]}], "]"}], "\[Cross]", 
+        " ", 
+        SubscriptBox["\[CapitalAHat]", "t"]}]}], "]"}], 
+     "\[RightDoubleBracket]"}]}], " ", "]"}]}]], "Input",
+ CellChangeTimes->{{3.753201210506425*^9, 3.753201367575755*^9}, {
+  3.753201476854945*^9, 3.7532014822617683`*^9}}],
+
+Cell[BoxData[
+ TagBox[
+  RowBox[{
+   RowBox[{
+    SuperscriptBox["L", "CLIP"], "[", "\[Theta]", "]"}], "=", 
+   RowBox[{
+    SubscriptBox["\[DoubleStruckCapitalE]", "t"], "\[LeftDoubleBracket]", 
+    RowBox[{"min", "[", 
+     RowBox[{
+      RowBox[{
+       RowBox[{
+        SubscriptBox["r", "t"], "[", "\[Theta]", "]"}], "\[Cross]", 
+       SubscriptBox["\[CapitalAHat]", "t"]}], ",", 
+      RowBox[{
+       RowBox[{"clip", "[", 
+        RowBox[{
+         RowBox[{
+          SubscriptBox["r", "t"], "[", "\[Theta]", "]"}], ",", 
+         RowBox[{"1", "-", "\[Epsilon]"}], ",", 
+         RowBox[{"1", "+", "\[Epsilon]"}]}], "]"}], "\[Cross]", 
+       SubscriptBox["\[CapitalAHat]", "t"]}]}], "]"}], 
+    "\[RightDoubleBracket]"}]}],
+  HoldForm]], "Output",
+ CellChangeTimes->{
+  3.753201368675765*^9, 3.753201483111541*^9, {3.753204000121265*^9, 
+   3.753204039270926*^9}, 3.753354553683638*^9, 3.753354609306921*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"ppoClipLoss", " ", "//", " ", "TraditionalForm"}]], "Input",
+ CellChangeTimes->{{3.7532013716912203`*^9, 3.753201375229965*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  TagBox[
+   RowBox[{
+    RowBox[{
+     SuperscriptBox["L", "CLIP"], "(", "\[Theta]", ")"}], "=", 
+    RowBox[{
+     SubscriptBox["\[DoubleStruckCapitalE]", "t"], "\[LeftDoubleBracket]", 
+     RowBox[{"min", "(", 
+      RowBox[{
+       RowBox[{
+        RowBox[{
+         SubscriptBox["r", "t"], "(", "\[Theta]", ")"}], "\[Cross]", 
+        SubscriptBox["\[CapitalAHat]", "t"]}], ",", 
+       RowBox[{
+        RowBox[{"clip", "(", 
+         RowBox[{
+          RowBox[{
+           SubscriptBox["r", "t"], "(", "\[Theta]", ")"}], ",", 
+          RowBox[{"1", "-", "\[Epsilon]"}], ",", 
+          RowBox[{"1", "+", "\[Epsilon]"}]}], ")"}], "\[Cross]", 
+        SubscriptBox["\[CapitalAHat]", "t"]}]}], ")"}], 
+     "\[RightDoubleBracket]"}]}],
+   HoldForm], TraditionalForm]], "Output",
+ CellChangeTimes->{
+  3.7532013757840567`*^9, 3.75320148602561*^9, {3.75320400018746*^9, 
+   3.7532040393141127`*^9}, 3.75335455944182*^9, 3.753354609370934*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"ppoValueLoss", " ", "=", " ", 
+  RowBox[{"HoldForm", "[", 
+   RowBox[{
+    RowBox[{
+     SuperscriptBox[
+      SubscriptBox["L", "t"], "VF"], " ", "[", "\[Theta]", "]"}], " ", "=", 
+    " ", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{
+        SubscriptBox["V", "\[Theta]"], "[", 
+        SubscriptBox["s", "t"], "]"}], " ", "-", " ", 
+       SuperscriptBox[
+        SubscriptBox["V", "t"], "targ"]}], ")"}], "^", "2"}]}], 
+   "]"}]}]], "Input",
+ CellChangeTimes->{{3.753201546663864*^9, 3.7532016867317963`*^9}}],
+
+Cell[BoxData[
+ TagBox[
+  RowBox[{
+   RowBox[{
+    SubsuperscriptBox["L", "t", "VF"], "[", "\[Theta]", "]"}], "=", 
+   SuperscriptBox[
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{
+       SubscriptBox["V", "\[Theta]"], "[", 
+       SubscriptBox["s", "t"], "]"}], "-", 
+      SubsuperscriptBox["V", "t", "targ"]}], ")"}], "2"]}],
+  HoldForm]], "Output",
+ CellChangeTimes->{
+  3.753201634303709*^9, {3.7532016715277452`*^9, 3.753201687478032*^9}, {
+   3.75320400023347*^9, 3.7532040393729763`*^9}, 3.753354609421482*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"ppoValueLoss", " ", "//", "TraditionalForm"}]], "Input",
+ CellChangeTimes->{{3.75320167404268*^9, 3.753201678676272*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  TagBox[
+   RowBox[{
+    RowBox[{
+     SubsuperscriptBox["L", "t", "VF"], "(", "\[Theta]", ")"}], "=", 
+    SuperscriptBox[
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{
+        SubscriptBox["V", "\[Theta]"], "(", 
+        SubscriptBox["s", "t"], ")"}], "-", 
+       SubsuperscriptBox["V", "t", "targ"]}], ")"}], "2"]}],
+   HoldForm], TraditionalForm]], "Output",
+ CellChangeTimes->{{3.753201678984866*^9, 3.753201690639978*^9}, {
+   3.75320400030226*^9, 3.753204039442514*^9}, 3.7533546094728127`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"ppoEntropyLoss", " ", "=", "  ", 
+  RowBox[{"HoldForm", "[", 
+   RowBox[{
+    RowBox[{
+     SuperscriptBox[
+      SubscriptBox["L", "t"], "Entropy"], " ", "[", "\[Theta]", "]"}], " ", 
+    "=", " ", 
+    RowBox[{
+     RowBox[{"S", "[", 
+      SubscriptBox["\[Pi]", "\[Theta]"], "]"}], "[", 
+     SubscriptBox["s", "t"], "]"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.753201700659046*^9, 3.753201794863442*^9}, {
+  3.753201897126088*^9, 3.7532019203226233`*^9}, {3.753201951084939*^9, 
+  3.75320196411351*^9}}],
+
+Cell[BoxData[
+ TagBox[
+  RowBox[{
+   RowBox[{
+    SubsuperscriptBox["L", "t", "Entropy"], "[", "\[Theta]", "]"}], "=", 
+   RowBox[{
+    RowBox[{"S", "[", 
+     SubscriptBox["\[Pi]", "\[Theta]"], "]"}], "[", 
+    SubscriptBox["s", "t"], "]"}]}],
+  HoldForm]], "Output",
+ CellChangeTimes->{
+  3.753201730173874*^9, 3.75320179763067*^9, 3.75320190573529*^9, 
+   3.753201964585552*^9, {3.753204000368905*^9, 3.753204039505808*^9}, 
+   3.753354609522131*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"ppoEntropyLoss", " ", "//", " ", "TraditionalForm"}]], "Input",
+ CellChangeTimes->{{3.753201800382653*^9, 3.753201804910207*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  TagBox[
+   RowBox[{
+    RowBox[{
+     SubsuperscriptBox["L", "t", "Entropy"], "(", "\[Theta]", ")"}], "=", 
+    RowBox[{
+     RowBox[{"S", "(", 
+      SubscriptBox["\[Pi]", "\[Theta]"], ")"}], "\[InvisibleApplication]", 
+     RowBox[{"(", 
+      SubscriptBox["s", "t"], ")"}]}]}],
+   HoldForm], TraditionalForm]], "Output",
+ CellChangeTimes->{
+  3.753201805227152*^9, 3.753201967939156*^9, {3.753204000415159*^9, 
+   3.753204039637929*^9}, 3.7533546096214943`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"ppoLoss", " ", "=", " ", 
+  RowBox[{"HoldForm", "[", 
+   RowBox[{
+    RowBox[{
+     SuperscriptBox[
+      SubscriptBox["L", "t"], 
+      RowBox[{"CLIP", " ", "+", " ", "VF", " ", "+", " ", "S"}]], " ", "[", 
+     "\[Theta]", "]"}], " ", "=", " ", 
+    RowBox[{
+     SubscriptBox["\[DoubleStruckCapitalE]", "t"], "\[LeftDoubleBracket]", 
+     RowBox[{
+      RowBox[{
+       SuperscriptBox["L", "CLIP"], " ", "[", "\[Theta]", "]"}], " ", "-", 
+      " ", 
+      RowBox[{
+       SubscriptBox["c", "1"], "*", " ", 
+       SuperscriptBox[
+        SubscriptBox["L", "t"], "VF"]}], " ", "+", " ", 
+      RowBox[{
+       SubscriptBox["c", "2"], "*", " ", 
+       RowBox[{
+        RowBox[{"S", "[", 
+         SubscriptBox["\[Pi]", "\[Theta]"], "]"}], "[", 
+        SubscriptBox["s", "t"], "]"}]}]}], "\[RightDoubleBracket]"}]}], 
+   "]"}]}]], "Input",
+ CellChangeTimes->{{3.753201975585165*^9, 3.753202066538068*^9}}],
+
+Cell[BoxData[
+ TagBox[
+  RowBox[{
+   RowBox[{
+    SubsuperscriptBox["L", "t", 
+     RowBox[{"CLIP", "+", "VF", "+", "S"}]], "[", "\[Theta]", "]"}], "=", 
+   RowBox[{
+    SubscriptBox["\[DoubleStruckCapitalE]", "t"], "\[LeftDoubleBracket]", 
+    RowBox[{
+     RowBox[{
+      SuperscriptBox["L", "CLIP"], "[", "\[Theta]", "]"}], "-", 
+     RowBox[{
+      SubscriptBox["c", "1"], " ", 
+      SubsuperscriptBox["L", "t", "VF"]}], "+", 
+     RowBox[{
+      SubscriptBox["c", "2"], " ", 
+      RowBox[{
+       RowBox[{"S", "[", 
+        SubscriptBox["\[Pi]", "\[Theta]"], "]"}], "[", 
+       SubscriptBox["s", "t"], "]"}]}]}], "\[RightDoubleBracket]"}]}],
+  HoldForm]], "Output",
+ CellChangeTimes->{
+  3.753202067135407*^9, {3.75320400046885*^9, 3.753204039705792*^9}, 
+   3.753354609661727*^9, 3.753354671539522*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"ppoLoss", " ", "//", " ", "TraditionalForm"}]], "Input",
+ CellChangeTimes->{{3.753202069381432*^9, 3.7532020750492277`*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  TagBox[
+   RowBox[{
+    RowBox[{
+     SubsuperscriptBox["L", "t", 
+      RowBox[{"CLIP", "+", "VF", "+", "S"}]], "(", "\[Theta]", ")"}], "=", 
+    RowBox[{
+     SubscriptBox["\[DoubleStruckCapitalE]", "t"], "\[LeftDoubleBracket]", 
+     RowBox[{
+      RowBox[{
+       SuperscriptBox["L", "CLIP"], "(", "\[Theta]", ")"}], "-", 
+      RowBox[{
+       SubscriptBox["c", "1"], " ", 
+       SubsuperscriptBox["L", "t", "VF"]}], "+", 
+      RowBox[{
+       SubscriptBox["c", "2"], " ", 
+       RowBox[{
+        RowBox[{"S", "(", 
+         SubscriptBox["\[Pi]", "\[Theta]"], ")"}], "\[InvisibleApplication]", 
+        
+        RowBox[{"(", 
+         SubscriptBox["s", "t"], ")"}]}]}]}], "\[RightDoubleBracket]"}]}],
+   HoldForm], TraditionalForm]], "Output",
+ CellChangeTimes->{
+  3.7532020753901377`*^9, {3.7532040005358973`*^9, 3.753204039771953*^9}, 
+   3.753354609723878*^9, 3.753354674246262*^9}]
+}, Open  ]],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"Export", "[", 
+   RowBox[{"\"\<loss_ppo_ratio.svg\>\"", ",", " ", 
+    RowBox[{"ppoRatio", " ", "//", " ", "TraditionalForm"}]}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Export", "[", 
+   RowBox[{"\"\<loss_ppo_clip.svg\>\"", ",", "  ", 
+    RowBox[{"ppoClipLoss", "//", " ", "TraditionalForm"}]}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Export", "[", 
+   RowBox[{"\"\<loss_ppo_value.svg\>\"", ",", "  ", 
+    RowBox[{"ppoValueLoss", "//", " ", "TraditionalForm"}]}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Export", "[", 
+   RowBox[{"\"\<loss_ppo_entropy.svg\>\"", ",", "  ", 
+    RowBox[{"ppoEntropyLoss", "//", " ", "TraditionalForm"}]}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Export", "[", 
+   RowBox[{"\"\<loss_ppo.svg\>\"", ",", "  ", 
+    RowBox[{"ppoLoss", "//", " ", "TraditionalForm"}]}], "]"}], 
+  ";"}]}], "Input",
+ CellChangeTimes->{{3.753202112125588*^9, 3.753202167129101*^9}, {
+  3.753352652141489*^9, 3.753352669261406*^9}}],
+
+Cell[TextData[{
+ StyleBox["Advantage Estimation", "Subsection"],
+ "\n",
+ StyleBox["Generalized Advantage Estimation", "Subsection"]
+}], "Input",
+ Evaluatable->False,
+ CellChangeTimes->{{3.753195952976943*^9, 3.753195983336795*^9}, {
+  3.7531960244068823`*^9, 3.75319604440396*^9}, {3.7531981604533443`*^9, 
+  3.753198163189131*^9}, {3.753198696373838*^9, 3.753198711635064*^9}, {
+  3.753201198450716*^9, 3.7532011998329287`*^9}, {3.753202386219008*^9, 
+  3.7532023922651*^9}, {3.753355048617341*^9, 3.7533550512951727`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"gaeAdvantage", " ", "=", " ", 
+  RowBox[{"HoldForm", "[", 
+   RowBox[{
+    FormBox[
+     SubscriptBox["\[CapitalAHat]", "t"],
+     TraditionalForm], " ", "=", " ", 
+    RowBox[{
+     SubscriptBox["\[Delta]", "t"], " ", "+", " ", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"\[Gamma]", "*", "\[Lambda]"}], ")"}], 
+      SubscriptBox["\[Delta]", 
+       RowBox[{"t", "+", "1"}]]}], "+", "\[Ellipsis]", " ", "+", " ", 
+     "\[Ellipsis]", " ", "+", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{"\[Gamma]", "*", "\[Lambda]"}], ")"}], "^", 
+       RowBox[{"(", 
+        RowBox[{"T", "-", "t", "+", "1"}], ")"}]}], 
+      SubscriptBox["\[Delta]", 
+       RowBox[{"T", "-", "1"}]]}]}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.753202403495367*^9, 3.75320251076058*^9}, {
+  3.7532025438565493`*^9, 3.753202586180503*^9}, {3.753202669206568*^9, 
+  3.753202711865857*^9}, {3.753202786566873*^9, 3.7532028515546083`*^9}, {
+  3.7532029078107147`*^9, 3.7532029158888474`*^9}, {3.753202950274156*^9, 
+  3.753202959111644*^9}, {3.753203018837268*^9, 3.75320309204135*^9}}],
+
+Cell[BoxData[
+ TagBox[
+  RowBox[{
+   SubscriptBox["\[CapitalAHat]", "t"], "=", 
+   RowBox[{
+    SubscriptBox["\[Delta]", "t"], "+", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{"\[Gamma]", " ", "\[Lambda]"}], ")"}], " ", 
+     SubscriptBox["\[Delta]", 
+      RowBox[{"t", "+", "1"}]]}], "+", "\[Ellipsis]", "+", "\[Ellipsis]", "+", 
+    RowBox[{
+     SuperscriptBox[
+      RowBox[{"(", 
+       RowBox[{"\[Gamma]", " ", "\[Lambda]"}], ")"}], 
+      RowBox[{"T", "-", "t", "+", "1"}]], " ", 
+     SubscriptBox["\[Delta]", 
+      RowBox[{"T", "-", "1"}]]}]}]}],
+  HoldForm]], "Output",
+ CellChangeTimes->{{3.753202830197913*^9, 3.7532028522190123`*^9}, 
+   3.7532029163104258`*^9, 3.753202959655485*^9, {3.753203020123918*^9, 
+   3.753203093155897*^9}, {3.753204000817851*^9, 3.753204040057509*^9}, 
+   3.753354610038074*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"gaeAdvantage", " ", "//", " ", "TraditionalForm"}]], "Input",
+ CellChangeTimes->{{3.753202689754582*^9, 3.753202692876795*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  TagBox[
+   RowBox[{
+    SubscriptBox["\[CapitalAHat]", "t"], "=", 
+    RowBox[{
+     SubscriptBox["\[Delta]", "t"], "+", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"\[Gamma]", " ", "\[Lambda]"}], ")"}], " ", 
+      SubscriptBox["\[Delta]", 
+       RowBox[{"t", "+", "1"}]]}], "+", "\[Ellipsis]", "+", "\[Ellipsis]", 
+     "+", 
+     RowBox[{
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"\[Gamma]", " ", "\[Lambda]"}], ")"}], 
+       RowBox[{"T", "-", "t", "+", "1"}]], " ", 
+      SubscriptBox["\[Delta]", 
+       RowBox[{"T", "-", "1"}]]}]}]}],
+   HoldForm], TraditionalForm]], "Output",
+ CellChangeTimes->{
+  3.753202871749065*^9, 3.753202924204997*^9, 3.75320296724555*^9, {
+   3.753203026341943*^9, 3.753203060894779*^9}, 3.753203100187231*^9, {
+   3.753204000863205*^9, 3.75320404012204*^9}, 3.753354610089679*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"gaeDelta", " ", "=", " ", 
+  RowBox[{"HoldForm", "[", 
+   RowBox[{
+    FormBox[
+     SubscriptBox["\[Delta]", "t"],
+     TraditionalForm], " ", "=", " ", 
+    RowBox[{
+     SubscriptBox["r", "t"], "+", " ", 
+     RowBox[{"\[Gamma]", "*", 
+      RowBox[{"V", "[", 
+       SubscriptBox["s", 
+        RowBox[{"t", "+", "1"}]], "]"}]}], " ", "-", " ", 
+     RowBox[{"V", "[", 
+      SubscriptBox["s", "t"], "]"}]}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.753203118841011*^9, 3.753203166414446*^9}}],
+
+Cell[BoxData[
+ TagBox[
+  RowBox[{
+   SubscriptBox["\[Delta]", "t"], "=", 
+   RowBox[{
+    SubscriptBox["r", "t"], "+", 
+    RowBox[{"\[Gamma]", " ", 
+     RowBox[{"V", "[", 
+      SubscriptBox["s", 
+       RowBox[{"t", "+", "1"}]], "]"}]}], "-", 
+    RowBox[{"V", "[", 
+     SubscriptBox["s", "t"], "]"}]}]}],
+  HoldForm]], "Output",
+ CellChangeTimes->{
+  3.75320316817309*^9, {3.7532040009172993`*^9, 3.753204040187989*^9}, 
+   3.753354610129364*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"gaeDelta", " ", "//", " ", "TraditionalForm"}]], "Input",
+ CellChangeTimes->{{3.753203174287788*^9, 3.753203177488645*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  TagBox[
+   RowBox[{
+    SubscriptBox["\[Delta]", "t"], "=", 
+    RowBox[{
+     SubscriptBox["r", "t"], "+", 
+     RowBox[{"\[Gamma]", " ", 
+      RowBox[{"V", "(", 
+       SubscriptBox["s", 
+        RowBox[{"t", "+", "1"}]], ")"}]}], "-", 
+     RowBox[{"V", "(", 
+      SubscriptBox["s", "t"], ")"}]}]}],
+   HoldForm], TraditionalForm]], "Output",
+ CellChangeTimes->{
+  3.753203177996557*^9, {3.753204000984763*^9, 3.75320404025487*^9}, 
+   3.7533546101899977`*^9}]
+}, Open  ]],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"Export", "[", 
+   RowBox[{"\"\<gae_advantage.svg\>\"", ",", "  ", 
+    RowBox[{"gaeAdvantage", "//", " ", "TraditionalForm"}]}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Export", "[", 
+   RowBox[{"\"\<gae_delta.svg\>\"", ",", "  ", 
+    RowBox[{"gaeDelta", "//", " ", "TraditionalForm"}]}], "]"}], 
+  ";"}], "\[IndentingNewLine]"}], "Input",
+ CellChangeTimes->{{3.753203193630055*^9, 3.753203208259006*^9}}]
+},
+WindowSize->{920, 753},
+WindowMargins->{{Automatic, 59}, {Automatic, 14}},
+FrontEndVersion->"11.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (September \
+21, 2016)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[503, 20, 247, 7, 57, "Input",
+ Evaluatable->False],
+Cell[CellGroupData[{
+Cell[775, 31, 2335, 40, 35, "Input"],
+Cell[3113, 73, 940, 21, 35, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4090, 99, 277, 4, 32, "Input"],
+Cell[4370, 105, 747, 20, 46, "Output"]
+}, Open  ]],
+Cell[5132, 128, 872, 15, 32, "Input"],
+Cell[6007, 145, 295, 8, 57, "Input",
+ Evaluatable->False],
+Cell[CellGroupData[{
+Cell[6327, 157, 950, 25, 58, "Input"],
+Cell[7280, 184, 778, 23, 51, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[8095, 212, 206, 3, 32, "Input"],
+Cell[8304, 217, 958, 25, 63, "Output"]
+}, Open  ]],
+Cell[9277, 245, 298, 7, 32, "Input"],
+Cell[9578, 254, 189, 6, 32, "Input"],
+Cell[9770, 262, 356, 8, 57, "Input",
+ Evaluatable->False],
+Cell[CellGroupData[{
+Cell[10151, 274, 1152, 27, 58, "Input"],
+Cell[11306, 303, 800, 23, 51, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[12143, 331, 149, 2, 32, "Input"],
+Cell[12295, 335, 878, 25, 66, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[13210, 365, 1011, 22, 37, "Input"],
+Cell[14224, 389, 786, 21, 37, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[15047, 415, 153, 2, 32, "Input"],
+Cell[15203, 419, 805, 22, 49, "Output"]
+}, Open  ]],
+Cell[16023, 444, 489, 12, 54, "Input"],
+Cell[16515, 458, 401, 9, 57, "Input",
+ Evaluatable->False],
+Cell[CellGroupData[{
+Cell[16941, 471, 705, 20, 81, "Input"],
+Cell[17649, 493, 560, 19, 51, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[18246, 517, 147, 2, 32, "Input"],
+Cell[18396, 521, 609, 20, 63, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[19042, 546, 1016, 26, 35, "Input"],
+Cell[20061, 574, 917, 25, 35, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[21015, 604, 152, 2, 32, "Input"],
+Cell[21170, 608, 968, 26, 46, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[22175, 639, 556, 17, 35, "Input"],
+Cell[22734, 658, 518, 15, 41, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[23289, 678, 145, 2, 32, "Input"],
+Cell[23437, 682, 531, 15, 51, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[24005, 702, 536, 14, 35, "Input"],
+Cell[24544, 718, 453, 13, 35, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[25034, 736, 153, 2, 32, "Input"],
+Cell[25190, 740, 490, 14, 44, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[25717, 759, 932, 26, 35, "Input"],
+Cell[26652, 787, 811, 23, 35, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[27500, 815, 148, 2, 32, "Input"],
+Cell[27651, 819, 920, 26, 49, "Output"]
+}, Open  ]],
+Cell[28586, 848, 1067, 27, 117, "Input"],
+Cell[29656, 877, 524, 10, 64, "Input",
+ Evaluatable->False],
+Cell[CellGroupData[{
+Cell[30205, 891, 1111, 27, 35, "Input"],
+Cell[31319, 920, 824, 22, 32, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[32180, 947, 151, 2, 32, "Input"],
+Cell[32334, 951, 867, 24, 44, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[33238, 980, 522, 15, 32, "Input"],
+Cell[33763, 997, 451, 15, 32, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[34251, 1017, 147, 2, 32, "Input"],
+Cell[34401, 1021, 491, 16, 39, "Output"]
+}, Open  ]],
+Cell[34907, 1040, 464, 11, 75, "Input"]
+}
+]
+*)
+

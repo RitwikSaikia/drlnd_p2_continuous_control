@@ -1,0 +1,664 @@
+DEBUG:mlagents.envs:The true file name is Reacher
+DEBUG:mlagents.envs:This is the launch string /playground/envs/Reacher_Linux_NoVis/Reacher.x86_64
+Found path: /playground/envs/Reacher_Linux_NoVis/Reacher.x86_64
+Mono path[0] = '/playground/envs/Reacher_Linux_NoVis/Reacher_Data/Managed'
+Mono config path = '/playground/envs/Reacher_Linux_NoVis/Reacher_Data/MonoBleedingEdge/etc'
+Preloaded 'libgrpc_csharp_ext.x64.so'
+Unable to preload the following plugins:
+	libgrpc_csharp_ext.x86.so
+Logging to /root/.config/unity3d/Unity Technologies/Unity Environment/Player.log
+INFO:mlagents.envs:
+'Academy' started successfully!
+Unity Academy name: Academy
+        Number of Brains: 1
+        Number of External Brains : 1
+        Reset Parameters :
+		goal_size -> 5.0
+		goal_speed -> 1.0
+Unity brain name: ReacherBrain
+        Number of Visual Observations (per agent): 0
+        Vector Observation space size (per agent): 33
+        Number of stacked Vector Observation: 1
+        Vector Action space type: continuous
+        Vector Action space size (per agent): [4]
+        Vector Action descriptions: , , , 
+INFO:train.py:[1/2000] score=0.24, avg = 0.24, best = -inf, steps = 1000
+INFO:train.py:[2/2000] score=0.15, avg = 0.20, best = -inf, steps = 1000
+INFO:train.py:[3/2000] score=0.13, avg = 0.18, best = -inf, steps = 1000
+INFO:train.py:[4/2000] score=0.29, avg = 0.20, best = -inf, steps = 1000
+INFO:train.py:[5/2000] score=0.35, avg = 0.23, best = -inf, steps = 1000
+INFO:train.py:[6/2000] score=0.57, avg = 0.29, best = -inf, steps = 1000
+INFO:train.py:[7/2000] score=0.65, avg = 0.34, best = -inf, steps = 1000
+INFO:train.py:[8/2000] score=1.08, avg = 0.43, best = -inf, steps = 1000
+INFO:train.py:[9/2000] score=1.06, avg = 0.50, best = -inf, steps = 1000
+INFO:train.py:[10/2000] score=1.14, avg = 0.57, best = -inf, steps = 1000
+INFO:train.py:[11/2000] score=1.09, avg = 0.61, best = -inf, steps = 1000
+INFO:train.py:[12/2000] score=1.30, avg = 0.67, best = -inf, steps = 1000
+INFO:train.py:[13/2000] score=1.67, avg = 0.75, best = -inf, steps = 1000
+INFO:train.py:[14/2000] score=2.17, avg = 0.85, best = -inf, steps = 1000
+INFO:train.py:[15/2000] score=2.48, avg = 0.96, best = -inf, steps = 1000
+INFO:train.py:[16/2000] score=2.20, avg = 1.04, best = -inf, steps = 1000
+INFO:train.py:[17/2000] score=2.72, avg = 1.13, best = -inf, steps = 1000
+INFO:train.py:[18/2000] score=2.96, avg = 1.24, best = -inf, steps = 1000
+INFO:train.py:[19/2000] score=2.65, avg = 1.31, best = -inf, steps = 1000
+INFO:train.py:[20/2000] score=3.35, avg = 1.41, best = -inf, steps = 1000
+INFO:train.py:[21/2000] score=3.58, avg = 1.52, best = -inf, steps = 1000
+INFO:train.py:[22/2000] score=3.36, avg = 1.60, best = -inf, steps = 1000
+INFO:train.py:[23/2000] score=4.39, avg = 1.72, best = -inf, steps = 1000
+INFO:train.py:[24/2000] score=4.38, avg = 1.83, best = -inf, steps = 1000
+INFO:train.py:[25/2000] score=4.18, avg = 1.93, best = -inf, steps = 1000
+INFO:train.py:[26/2000] score=4.25, avg = 2.01, best = -inf, steps = 1000
+INFO:train.py:[27/2000] score=5.30, avg = 2.14, best = -inf, steps = 1000
+INFO:train.py:[28/2000] score=6.19, avg = 2.28, best = -inf, steps = 1000
+INFO:train.py:[29/2000] score=6.30, avg = 2.42, best = -inf, steps = 1000
+INFO:train.py:[30/2000] score=5.94, avg = 2.54, best = -inf, steps = 1000
+INFO:train.py:[31/2000] score=6.61, avg = 2.67, best = -inf, steps = 1000
+INFO:train.py:[32/2000] score=7.38, avg = 2.82, best = -inf, steps = 1000
+INFO:train.py:[33/2000] score=7.18, avg = 2.95, best = -inf, steps = 1000
+INFO:train.py:[34/2000] score=7.52, avg = 3.08, best = -inf, steps = 1000
+INFO:train.py:[35/2000] score=7.27, avg = 3.20, best = -inf, steps = 1000
+INFO:train.py:[36/2000] score=7.00, avg = 3.31, best = -inf, steps = 1000
+INFO:train.py:[37/2000] score=8.01, avg = 3.44, best = -inf, steps = 1000
+INFO:train.py:[38/2000] score=9.01, avg = 3.58, best = -inf, steps = 1000
+INFO:train.py:[39/2000] score=9.19, avg = 3.73, best = -inf, steps = 1000
+INFO:train.py:[40/2000] score=8.57, avg = 3.85, best = -inf, steps = 1000
+INFO:train.py:[41/2000] score=7.98, avg = 3.95, best = -inf, steps = 1000
+INFO:train.py:[42/2000] score=7.67, avg = 4.04, best = -inf, steps = 1000
+INFO:train.py:[43/2000] score=9.72, avg = 4.17, best = -inf, steps = 1000
+INFO:train.py:[44/2000] score=8.86, avg = 4.28, best = -inf, steps = 1000
+INFO:train.py:[45/2000] score=10.36, avg = 4.41, best = -inf, steps = 1000
+INFO:train.py:[46/2000] score=10.72, avg = 4.55, best = -inf, steps = 1000
+INFO:train.py:[47/2000] score=10.83, avg = 4.68, best = -inf, steps = 1000
+INFO:train.py:[48/2000] score=10.98, avg = 4.81, best = -inf, steps = 1000
+INFO:train.py:[49/2000] score=11.97, avg = 4.96, best = -inf, steps = 1000
+INFO:train.py:[50/2000] score=13.05, avg = 5.12, best = -inf, steps = 1000
+INFO:train.py:[51/2000] score=12.14, avg = 5.26, best = -inf, steps = 1000
+INFO:train.py:[52/2000] score=13.74, avg = 5.42, best = -inf, steps = 1000
+INFO:train.py:[53/2000] score=12.01, avg = 5.55, best = -inf, steps = 1000
+INFO:train.py:[54/2000] score=12.94, avg = 5.68, best = -inf, steps = 1000
+INFO:train.py:[55/2000] score=12.48, avg = 5.81, best = -inf, steps = 1000
+INFO:train.py:[56/2000] score=13.10, avg = 5.94, best = -inf, steps = 1000
+INFO:train.py:[57/2000] score=13.41, avg = 6.07, best = -inf, steps = 1000
+INFO:train.py:[58/2000] score=13.05, avg = 6.19, best = -inf, steps = 1000
+INFO:train.py:[59/2000] score=14.09, avg = 6.32, best = -inf, steps = 1000
+INFO:train.py:[60/2000] score=14.42, avg = 6.46, best = -inf, steps = 1000
+INFO:train.py:[61/2000] score=15.43, avg = 6.60, best = -inf, steps = 1000
+INFO:train.py:[62/2000] score=14.88, avg = 6.74, best = -inf, steps = 1000
+INFO:train.py:[63/2000] score=15.83, avg = 6.88, best = -inf, steps = 1000
+INFO:train.py:[64/2000] score=15.21, avg = 7.01, best = -inf, steps = 1000
+INFO:train.py:[65/2000] score=15.97, avg = 7.15, best = -inf, steps = 1000
+INFO:train.py:[66/2000] score=16.05, avg = 7.28, best = -inf, steps = 1000
+INFO:train.py:[67/2000] score=17.02, avg = 7.43, best = -inf, steps = 1000
+INFO:train.py:[68/2000] score=16.07, avg = 7.56, best = -inf, steps = 1000
+INFO:train.py:[69/2000] score=16.75, avg = 7.69, best = -inf, steps = 1000
+INFO:train.py:[70/2000] score=17.00, avg = 7.82, best = -inf, steps = 1000
+INFO:train.py:[71/2000] score=19.68, avg = 7.99, best = -inf, steps = 1000
+INFO:train.py:[72/2000] score=21.41, avg = 8.18, best = -inf, steps = 1000
+INFO:train.py:[73/2000] score=19.74, avg = 8.33, best = -inf, steps = 1000
+INFO:train.py:[74/2000] score=17.63, avg = 8.46, best = -inf, steps = 1000
+INFO:train.py:[75/2000] score=18.53, avg = 8.59, best = -inf, steps = 1000
+INFO:train.py:[76/2000] score=20.41, avg = 8.75, best = -inf, steps = 1000
+INFO:train.py:[77/2000] score=21.15, avg = 8.91, best = -inf, steps = 1000
+INFO:train.py:[78/2000] score=19.85, avg = 9.05, best = -inf, steps = 1000
+INFO:train.py:[79/2000] score=20.44, avg = 9.20, best = -inf, steps = 1000
+INFO:train.py:[80/2000] score=20.51, avg = 9.34, best = -inf, steps = 1000
+INFO:train.py:[81/2000] score=20.03, avg = 9.47, best = -inf, steps = 1000
+INFO:train.py:[82/2000] score=23.52, avg = 9.64, best = -inf, steps = 1000
+INFO:train.py:[83/2000] score=21.06, avg = 9.78, best = -inf, steps = 1000
+INFO:train.py:[84/2000] score=22.46, avg = 9.93, best = -inf, steps = 1000
+INFO:train.py:[85/2000] score=22.53, avg = 10.08, best = -inf, steps = 1000
+INFO:train.py:[86/2000] score=23.29, avg = 10.23, best = -inf, steps = 1000
+INFO:train.py:[87/2000] score=23.86, avg = 10.39, best = -inf, steps = 1000
+INFO:train.py:[88/2000] score=23.94, avg = 10.54, best = -inf, steps = 1000
+INFO:train.py:[89/2000] score=23.37, avg = 10.69, best = -inf, steps = 1000
+INFO:train.py:[90/2000] score=24.78, avg = 10.84, best = -inf, steps = 1000
+INFO:train.py:[91/2000] score=24.94, avg = 11.00, best = -inf, steps = 1000
+INFO:train.py:[92/2000] score=24.39, avg = 11.14, best = -inf, steps = 1000
+INFO:train.py:[93/2000] score=24.21, avg = 11.28, best = -inf, steps = 1000
+INFO:train.py:[94/2000] score=25.48, avg = 11.43, best = -inf, steps = 1000
+INFO:train.py:[95/2000] score=27.23, avg = 11.60, best = -inf, steps = 1000
+INFO:train.py:[96/2000] score=24.96, avg = 11.74, best = -inf, steps = 1000
+INFO:train.py:[97/2000] score=25.88, avg = 11.89, best = -inf, steps = 1000
+INFO:train.py:[98/2000] score=28.04, avg = 12.05, best = -inf, steps = 1000
+INFO:train.py:[99/2000] score=25.82, avg = 12.19, best = -inf, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[100/2000] score=25.88, avg = 12.33, best = 12.33, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[101/2000] score=27.37, avg = 12.60, best = 12.60, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[102/2000] score=27.15, avg = 12.87, best = 12.87, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[103/2000] score=27.62, avg = 13.14, best = 13.14, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[104/2000] score=25.27, avg = 13.39, best = 13.39, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[105/2000] score=27.41, avg = 13.66, best = 13.66, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[106/2000] score=25.87, avg = 13.92, best = 13.92, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[107/2000] score=27.23, avg = 14.18, best = 14.18, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[108/2000] score=26.97, avg = 14.44, best = 14.44, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[109/2000] score=26.77, avg = 14.70, best = 14.70, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[110/2000] score=27.70, avg = 14.96, best = 14.96, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[111/2000] score=27.07, avg = 15.22, best = 15.22, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[112/2000] score=26.99, avg = 15.48, best = 15.48, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[113/2000] score=29.11, avg = 15.75, best = 15.75, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[114/2000] score=26.56, avg = 16.00, best = 16.00, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[115/2000] score=27.60, avg = 16.25, best = 16.25, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[116/2000] score=29.31, avg = 16.52, best = 16.52, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[117/2000] score=29.12, avg = 16.78, best = 16.78, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[118/2000] score=28.54, avg = 17.04, best = 17.04, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[119/2000] score=26.90, avg = 17.28, best = 17.28, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[120/2000] score=29.49, avg = 17.54, best = 17.54, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[121/2000] score=25.95, avg = 17.77, best = 17.77, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[122/2000] score=29.02, avg = 18.02, best = 18.02, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[123/2000] score=30.01, avg = 18.28, best = 18.28, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[124/2000] score=27.85, avg = 18.52, best = 18.52, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[125/2000] score=29.55, avg = 18.77, best = 18.77, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[126/2000] score=28.46, avg = 19.01, best = 19.01, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[127/2000] score=29.20, avg = 19.25, best = 19.25, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[128/2000] score=28.04, avg = 19.47, best = 19.47, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[129/2000] score=27.81, avg = 19.68, best = 19.68, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[130/2000] score=28.69, avg = 19.91, best = 19.91, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[131/2000] score=28.53, avg = 20.13, best = 20.13, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[132/2000] score=29.15, avg = 20.35, best = 20.35, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[133/2000] score=28.29, avg = 20.56, best = 20.56, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[134/2000] score=29.47, avg = 20.78, best = 20.78, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[135/2000] score=29.63, avg = 21.00, best = 21.00, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[136/2000] score=29.21, avg = 21.22, best = 21.22, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[137/2000] score=30.39, avg = 21.45, best = 21.45, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[138/2000] score=28.65, avg = 21.65, best = 21.65, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[139/2000] score=29.57, avg = 21.85, best = 21.85, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[140/2000] score=29.84, avg = 22.06, best = 22.06, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[141/2000] score=29.46, avg = 22.28, best = 22.28, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[142/2000] score=28.39, avg = 22.48, best = 22.48, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[143/2000] score=29.92, avg = 22.69, best = 22.69, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[144/2000] score=28.27, avg = 22.88, best = 22.88, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[145/2000] score=29.08, avg = 23.07, best = 23.07, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[146/2000] score=29.35, avg = 23.25, best = 23.25, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[147/2000] score=28.97, avg = 23.43, best = 23.43, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[148/2000] score=29.14, avg = 23.62, best = 23.62, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[149/2000] score=28.90, avg = 23.79, best = 23.79, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[150/2000] score=29.66, avg = 23.95, best = 23.95, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[151/2000] score=28.60, avg = 24.12, best = 24.12, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[152/2000] score=28.56, avg = 24.26, best = 24.26, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[153/2000] score=29.59, avg = 24.44, best = 24.44, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[154/2000] score=30.00, avg = 24.61, best = 24.61, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[155/2000] score=28.80, avg = 24.77, best = 24.77, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[156/2000] score=30.44, avg = 24.95, best = 24.95, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[157/2000] score=29.12, avg = 25.10, best = 25.10, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[158/2000] score=29.18, avg = 25.27, best = 25.27, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[159/2000] score=28.33, avg = 25.41, best = 25.41, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[160/2000] score=29.01, avg = 25.55, best = 25.55, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[161/2000] score=29.64, avg = 25.70, best = 25.70, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[162/2000] score=30.38, avg = 25.85, best = 25.85, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[163/2000] score=29.19, avg = 25.98, best = 25.98, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[164/2000] score=30.05, avg = 26.13, best = 26.13, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[165/2000] score=29.60, avg = 26.27, best = 26.27, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[166/2000] score=29.52, avg = 26.40, best = 26.40, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[167/2000] score=29.62, avg = 26.53, best = 26.53, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[168/2000] score=29.70, avg = 26.67, best = 26.67, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[169/2000] score=29.88, avg = 26.80, best = 26.80, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[170/2000] score=29.35, avg = 26.92, best = 26.92, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[171/2000] score=29.95, avg = 27.02, best = 27.02, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[172/2000] score=30.03, avg = 27.11, best = 27.11, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[173/2000] score=30.68, avg = 27.22, best = 27.22, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[174/2000] score=30.87, avg = 27.35, best = 27.35, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[175/2000] score=30.44, avg = 27.47, best = 27.47, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[176/2000] score=31.00, avg = 27.58, best = 27.58, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[177/2000] score=28.99, avg = 27.66, best = 27.66, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[178/2000] score=29.75, avg = 27.75, best = 27.75, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[179/2000] score=31.12, avg = 27.86, best = 27.86, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[180/2000] score=29.85, avg = 27.95, best = 27.95, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[181/2000] score=29.94, avg = 28.05, best = 28.05, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[182/2000] score=29.49, avg = 28.11, best = 28.11, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[183/2000] score=30.15, avg = 28.20, best = 28.20, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[184/2000] score=30.37, avg = 28.28, best = 28.28, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[185/2000] score=29.12, avg = 28.35, best = 28.35, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[186/2000] score=30.40, avg = 28.42, best = 28.42, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[187/2000] score=28.23, avg = 28.46, best = 28.46, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[188/2000] score=30.09, avg = 28.53, best = 28.53, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[189/2000] score=29.99, avg = 28.59, best = 28.59, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[190/2000] score=30.62, avg = 28.65, best = 28.65, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[191/2000] score=29.44, avg = 28.70, best = 28.70, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[192/2000] score=29.44, avg = 28.75, best = 28.75, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[193/2000] score=30.83, avg = 28.81, best = 28.81, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[194/2000] score=29.69, avg = 28.85, best = 28.85, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[195/2000] score=28.95, avg = 28.87, best = 28.87, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[196/2000] score=30.29, avg = 28.92, best = 28.92, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[197/2000] score=30.59, avg = 28.97, best = 28.97, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[198/2000] score=29.54, avg = 28.99, best = 28.99, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[199/2000] score=30.16, avg = 29.03, best = 29.03, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[200/2000] score=29.13, avg = 29.06, best = 29.06, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[201/2000] score=29.48, avg = 29.08, best = 29.08, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[202/2000] score=30.02, avg = 29.11, best = 29.11, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[203/2000] score=29.77, avg = 29.13, best = 29.13, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[204/2000] score=29.24, avg = 29.17, best = 29.17, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[205/2000] score=29.55, avg = 29.20, best = 29.20, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[206/2000] score=29.07, avg = 29.23, best = 29.23, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[207/2000] score=29.97, avg = 29.25, best = 29.25, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[208/2000] score=28.90, avg = 29.27, best = 29.27, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[209/2000] score=29.29, avg = 29.30, best = 29.30, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[210/2000] score=30.15, avg = 29.32, best = 29.32, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[211/2000] score=30.60, avg = 29.36, best = 29.36, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[212/2000] score=28.70, avg = 29.38, best = 29.38, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[213/2000] score=31.12, avg = 29.40, best = 29.40, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[214/2000] score=30.56, avg = 29.44, best = 29.44, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[215/2000] score=30.21, avg = 29.46, best = 29.46, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[216/2000] score=29.68, avg = 29.47, best = 29.47, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[217/2000] score=29.50, avg = 29.47, best = 29.47, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[218/2000] score=30.80, avg = 29.49, best = 29.49, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[219/2000] score=30.46, avg = 29.53, best = 29.53, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[220/2000] score=30.34, avg = 29.54, best = 29.54, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[221/2000] score=30.04, avg = 29.58, best = 29.58, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[222/2000] score=29.31, avg = 29.58, best = 29.58, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[223/2000] score=30.65, avg = 29.59, best = 29.59, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[224/2000] score=30.32, avg = 29.61, best = 29.61, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[225/2000] score=30.13, avg = 29.62, best = 29.62, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[226/2000] score=28.86, avg = 29.62, best = 29.62, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[227/2000] score=30.82, avg = 29.64, best = 29.64, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[228/2000] score=29.71, avg = 29.65, best = 29.65, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[229/2000] score=30.60, avg = 29.68, best = 29.68, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[230/2000] score=29.93, avg = 29.69, best = 29.69, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[231/2000] score=30.48, avg = 29.71, best = 29.71, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[232/2000] score=29.53, avg = 29.72, best = 29.72, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[233/2000] score=30.45, avg = 29.74, best = 29.74, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[234/2000] score=29.48, avg = 29.74, best = 29.74, steps = 1000
+INFO:train.py:[235/2000] score=29.07, avg = 29.73, best = 29.74, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[236/2000] score=29.85, avg = 29.74, best = 29.74, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[237/2000] score=30.62, avg = 29.74, best = 29.74, steps = 1000
+INFO:train.py:[238/2000] score=28.43, avg = 29.74, best = 29.74, steps = 1000
+INFO:train.py:[239/2000] score=29.07, avg = 29.74, best = 29.74, steps = 1000
+INFO:train.py:[240/2000] score=30.33, avg = 29.74, best = 29.74, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[241/2000] score=30.98, avg = 29.76, best = 29.76, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[242/2000] score=31.14, avg = 29.78, best = 29.78, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[243/2000] score=31.10, avg = 29.79, best = 29.79, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[244/2000] score=30.67, avg = 29.82, best = 29.82, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[245/2000] score=30.19, avg = 29.83, best = 29.83, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[246/2000] score=31.54, avg = 29.85, best = 29.85, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[247/2000] score=30.53, avg = 29.87, best = 29.87, steps = 1000
+INFO:train.py:[248/2000] score=28.87, avg = 29.86, best = 29.87, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[249/2000] score=30.39, avg = 29.88, best = 29.88, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[250/2000] score=30.76, avg = 29.89, best = 29.89, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[251/2000] score=30.80, avg = 29.91, best = 29.91, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[252/2000] score=29.84, avg = 29.93, best = 29.93, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[253/2000] score=29.96, avg = 29.93, best = 29.93, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[254/2000] score=30.01, avg = 29.93, best = 29.93, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[255/2000] score=29.92, avg = 29.94, best = 29.94, steps = 1000
+INFO:train.py:[256/2000] score=30.11, avg = 29.94, best = 29.94, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[257/2000] score=32.18, avg = 29.97, best = 29.97, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[258/2000] score=31.43, avg = 29.99, best = 29.99, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[259/2000] score=30.37, avg = 30.01, best = 30.01, steps = 1000
+INFO:train.py:Environment solved in 259 episodes
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.solved
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[260/2000] score=30.10, avg = 30.02, best = 30.02, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[261/2000] score=31.14, avg = 30.04, best = 30.04, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[262/2000] score=30.62, avg = 30.04, best = 30.04, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[263/2000] score=31.39, avg = 30.06, best = 30.06, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[264/2000] score=32.19, avg = 30.08, best = 30.08, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[265/2000] score=31.26, avg = 30.10, best = 30.10, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[266/2000] score=31.05, avg = 30.11, best = 30.11, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[267/2000] score=31.23, avg = 30.13, best = 30.13, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[268/2000] score=31.63, avg = 30.15, best = 30.15, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[269/2000] score=31.15, avg = 30.16, best = 30.16, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[270/2000] score=30.73, avg = 30.18, best = 30.18, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[271/2000] score=31.25, avg = 30.19, best = 30.19, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[272/2000] score=31.86, avg = 30.21, best = 30.21, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[273/2000] score=31.69, avg = 30.22, best = 30.22, steps = 1000
+INFO:train.py:[274/2000] score=30.17, avg = 30.21, best = 30.22, steps = 1000
+INFO:train.py:[275/2000] score=30.51, avg = 30.21, best = 30.22, steps = 1000
+INFO:train.py:[276/2000] score=31.05, avg = 30.21, best = 30.22, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[277/2000] score=29.73, avg = 30.22, best = 30.22, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[278/2000] score=30.32, avg = 30.22, best = 30.22, steps = 1000
+INFO:train.py:[279/2000] score=30.50, avg = 30.22, best = 30.22, steps = 1000
+INFO:train.py:[280/2000] score=29.31, avg = 30.21, best = 30.22, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[281/2000] score=31.54, avg = 30.23, best = 30.23, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[282/2000] score=31.45, avg = 30.25, best = 30.25, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[283/2000] score=31.57, avg = 30.26, best = 30.26, steps = 1000
+INFO:train.py:[284/2000] score=30.00, avg = 30.26, best = 30.26, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[285/2000] score=31.12, avg = 30.28, best = 30.28, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[286/2000] score=31.22, avg = 30.29, best = 30.29, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[287/2000] score=30.15, avg = 30.31, best = 30.31, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[288/2000] score=30.11, avg = 30.31, best = 30.31, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[289/2000] score=31.58, avg = 30.32, best = 30.32, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[290/2000] score=30.65, avg = 30.32, best = 30.32, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[291/2000] score=30.84, avg = 30.34, best = 30.34, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[292/2000] score=31.38, avg = 30.36, best = 30.36, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[293/2000] score=31.35, avg = 30.36, best = 30.36, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[294/2000] score=31.73, avg = 30.38, best = 30.38, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[295/2000] score=30.55, avg = 30.40, best = 30.40, steps = 1000
+INFO:train.py:[296/2000] score=30.09, avg = 30.40, best = 30.40, steps = 1000
+INFO:train.py:[297/2000] score=30.72, avg = 30.40, best = 30.40, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[298/2000] score=31.14, avg = 30.41, best = 30.41, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[299/2000] score=31.18, avg = 30.42, best = 30.42, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[300/2000] score=31.82, avg = 30.45, best = 30.45, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[301/2000] score=32.52, avg = 30.48, best = 30.48, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[302/2000] score=31.69, avg = 30.50, best = 30.50, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[303/2000] score=31.40, avg = 30.51, best = 30.51, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[304/2000] score=30.99, avg = 30.53, best = 30.53, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[305/2000] score=31.00, avg = 30.55, best = 30.55, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[306/2000] score=30.73, avg = 30.56, best = 30.56, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[307/2000] score=30.73, avg = 30.57, best = 30.57, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[308/2000] score=30.80, avg = 30.59, best = 30.59, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[309/2000] score=31.24, avg = 30.61, best = 30.61, steps = 1000
+INFO:train.py:[310/2000] score=30.04, avg = 30.61, best = 30.61, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[311/2000] score=31.13, avg = 30.61, best = 30.61, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[312/2000] score=30.78, avg = 30.63, best = 30.63, steps = 1000
+INFO:train.py:[313/2000] score=30.48, avg = 30.63, best = 30.63, steps = 1000
+INFO:train.py:[314/2000] score=30.77, avg = 30.63, best = 30.63, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[315/2000] score=32.16, avg = 30.65, best = 30.65, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[316/2000] score=31.23, avg = 30.66, best = 30.66, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[317/2000] score=31.04, avg = 30.68, best = 30.68, steps = 1000
+INFO:train.py:[318/2000] score=30.24, avg = 30.67, best = 30.68, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[319/2000] score=31.53, avg = 30.68, best = 30.68, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[320/2000] score=30.70, avg = 30.69, best = 30.69, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[321/2000] score=30.61, avg = 30.69, best = 30.69, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[322/2000] score=30.71, avg = 30.71, best = 30.71, steps = 1000
+INFO:train.py:[323/2000] score=30.22, avg = 30.70, best = 30.71, steps = 1000
+INFO:train.py:[324/2000] score=30.18, avg = 30.70, best = 30.71, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[325/2000] score=30.95, avg = 30.71, best = 30.71, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[326/2000] score=30.53, avg = 30.73, best = 30.73, steps = 1000
+INFO:train.py:[327/2000] score=30.77, avg = 30.73, best = 30.73, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[328/2000] score=30.78, avg = 30.74, best = 30.74, steps = 1000
+INFO:train.py:[329/2000] score=29.56, avg = 30.73, best = 30.74, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[330/2000] score=31.41, avg = 30.74, best = 30.74, steps = 1000
+INFO:train.py:[331/2000] score=30.20, avg = 30.74, best = 30.74, steps = 1000
+INFO:train.py:[332/2000] score=29.63, avg = 30.74, best = 30.74, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[333/2000] score=31.99, avg = 30.75, best = 30.75, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[334/2000] score=30.17, avg = 30.76, best = 30.76, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[335/2000] score=30.76, avg = 30.78, best = 30.78, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[336/2000] score=30.56, avg = 30.79, best = 30.79, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[337/2000] score=31.04, avg = 30.79, best = 30.79, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[338/2000] score=30.28, avg = 30.81, best = 30.81, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[339/2000] score=30.58, avg = 30.82, best = 30.82, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[340/2000] score=30.58, avg = 30.83, best = 30.83, steps = 1000
+INFO:train.py:[341/2000] score=30.89, avg = 30.83, best = 30.83, steps = 1000
+INFO:train.py:[342/2000] score=30.87, avg = 30.82, best = 30.83, steps = 1000
+INFO:train.py:[343/2000] score=29.67, avg = 30.81, best = 30.83, steps = 1000
+INFO:train.py:[344/2000] score=30.26, avg = 30.80, best = 30.83, steps = 1000
+INFO:train.py:[345/2000] score=30.93, avg = 30.81, best = 30.83, steps = 1000
+INFO:train.py:[346/2000] score=29.47, avg = 30.79, best = 30.83, steps = 1000
+INFO:train.py:[347/2000] score=31.11, avg = 30.80, best = 30.83, steps = 1000
+INFO:train.py:[348/2000] score=29.52, avg = 30.80, best = 30.83, steps = 1000
+INFO:train.py:[349/2000] score=29.94, avg = 30.80, best = 30.83, steps = 1000
+INFO:train.py:[350/2000] score=30.98, avg = 30.80, best = 30.83, steps = 1000
+INFO:train.py:[351/2000] score=30.51, avg = 30.80, best = 30.83, steps = 1000
+INFO:train.py:[352/2000] score=29.92, avg = 30.80, best = 30.83, steps = 1000
+INFO:train.py:[353/2000] score=30.68, avg = 30.81, best = 30.83, steps = 1000
+INFO:train.py:[354/2000] score=31.34, avg = 30.82, best = 30.83, steps = 1000
+INFO:train.py:[355/2000] score=30.57, avg = 30.83, best = 30.83, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[356/2000] score=31.71, avg = 30.84, best = 30.84, steps = 1000
+INFO:train.py:[357/2000] score=30.77, avg = 30.83, best = 30.84, steps = 1000
+INFO:train.py:[358/2000] score=31.69, avg = 30.83, best = 30.84, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[359/2000] score=31.65, avg = 30.84, best = 30.84, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[360/2000] score=31.68, avg = 30.86, best = 30.86, steps = 1000
+INFO:train.py:[361/2000] score=30.35, avg = 30.85, best = 30.86, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[362/2000] score=31.95, avg = 30.86, best = 30.86, steps = 1000
+INFO:train.py:[363/2000] score=29.88, avg = 30.85, best = 30.86, steps = 1000
+INFO:train.py:[364/2000] score=29.22, avg = 30.82, best = 30.86, steps = 1000
+INFO:train.py:[365/2000] score=31.62, avg = 30.82, best = 30.86, steps = 1000
+INFO:train.py:[366/2000] score=31.06, avg = 30.82, best = 30.86, steps = 1000
+INFO:train.py:[367/2000] score=31.41, avg = 30.83, best = 30.86, steps = 1000
+INFO:train.py:[368/2000] score=30.93, avg = 30.82, best = 30.86, steps = 1000
+INFO:train.py:[369/2000] score=31.03, avg = 30.82, best = 30.86, steps = 1000
+INFO:train.py:[370/2000] score=32.00, avg = 30.83, best = 30.86, steps = 1000
+INFO:train.py:[371/2000] score=30.61, avg = 30.82, best = 30.86, steps = 1000
+INFO:train.py:[372/2000] score=30.96, avg = 30.81, best = 30.86, steps = 1000
+INFO:train.py:[373/2000] score=32.03, avg = 30.82, best = 30.86, steps = 1000
+INFO:train.py:[374/2000] score=30.47, avg = 30.82, best = 30.86, steps = 1000
+INFO:train.py:[375/2000] score=31.90, avg = 30.83, best = 30.86, steps = 1000
+INFO:train.py:[376/2000] score=31.53, avg = 30.84, best = 30.86, steps = 1000
+INFO:train.py:[377/2000] score=29.34, avg = 30.84, best = 30.86, steps = 1000
+INFO:train.py:[378/2000] score=31.48, avg = 30.85, best = 30.86, steps = 1000
+INFO:train.py:[379/2000] score=31.45, avg = 30.86, best = 30.86, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[380/2000] score=30.68, avg = 30.87, best = 30.87, steps = 1000
+INFO:train.py:[381/2000] score=31.50, avg = 30.87, best = 30.87, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[382/2000] score=31.92, avg = 30.87, best = 30.87, steps = 1000
+INFO:train.py:[383/2000] score=29.98, avg = 30.86, best = 30.87, steps = 1000
+INFO:train.py:[384/2000] score=29.73, avg = 30.86, best = 30.87, steps = 1000
+INFO:train.py:[385/2000] score=30.66, avg = 30.85, best = 30.87, steps = 1000
+INFO:train.py:[386/2000] score=30.46, avg = 30.84, best = 30.87, steps = 1000
+INFO:train.py:[387/2000] score=30.89, avg = 30.85, best = 30.87, steps = 1000
+INFO:train.py:[388/2000] score=31.26, avg = 30.86, best = 30.87, steps = 1000
+INFO:train.py:[389/2000] score=31.80, avg = 30.86, best = 30.87, steps = 1000
+INFO:train.py:[390/2000] score=30.48, avg = 30.86, best = 30.87, steps = 1000
+INFO:train.py:[391/2000] score=31.32, avg = 30.87, best = 30.87, steps = 1000
+INFO:train.py:[392/2000] score=31.79, avg = 30.87, best = 30.87, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[393/2000] score=31.63, avg = 30.87, best = 30.87, steps = 1000
+INFO:train.py:[394/2000] score=31.17, avg = 30.87, best = 30.87, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[395/2000] score=31.27, avg = 30.88, best = 30.88, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[396/2000] score=31.30, avg = 30.89, best = 30.89, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[397/2000] score=32.13, avg = 30.90, best = 30.90, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[398/2000] score=31.54, avg = 30.91, best = 30.91, steps = 1000
+INFO:model.py:saving checkpoint to : checkpoints/Reacher.ppo.best
+INFO:train.py:[399/2000] score=31.52, avg = 30.91, best = 30.91, steps = 1000
+INFO:train.py:[400/2000] score=31.70, avg = 30.91, best = 30.91, steps = 1000
+INFO:train.py:[401/2000] score=32.54, avg = 30.91, best = 30.91, steps = 1000
+INFO:train.py:[402/2000] score=30.85, avg = 30.90, best = 30.91, steps = 1000
+INFO:train.py:[403/2000] score=29.72, avg = 30.88, best = 30.91, steps = 1000
+INFO:train.py:[404/2000] score=31.75, avg = 30.89, best = 30.91, steps = 1000
+INFO:train.py:[405/2000] score=31.82, avg = 30.90, best = 30.91, steps = 1000
+INFO:train.py:[406/2000] score=31.28, avg = 30.91, best = 30.91, steps = 1000
+INFO:train.py:[407/2000] score=30.43, avg = 30.90, best = 30.91, steps = 1000
+INFO:train.py:[408/2000] score=30.80, avg = 30.90, best = 30.91, steps = 1000
+
