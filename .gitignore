@@ -2,6 +2,7 @@ scores*.npy
 *.pth
 *.ckpt*
 *.log
+plot.png
 
 UnitySDK.log
 unity-environment.log
